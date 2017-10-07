@@ -1,0 +1,39 @@
+body {
+	background: url("Images/backgroundimg.jpg") no-repeat;
+	background-color: #c1cdcd;
+}
+
+
+.container{
+		
+
+}
+
+
+
+.header {
+	border-radius: 25px;
+	padding-top: 10px;
+	opacity: 0.9;
+	background-color: #8b5a2b;
+	color: 	#333333;
+
+}
+
+
+
+.btn {
+	margin: 25px;
+	
+}
+
+
+alphabet{
+	
+
+}
+
+.underscore{
+	
+	
+}
