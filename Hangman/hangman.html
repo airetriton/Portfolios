@@ -46,13 +46,13 @@
 	<div class="containter">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				//alphabet
+				<div id="alphabet"></div>
 
 			</div>	
 
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 				<div class="display">
-				//hangman image
+				<div id="hangman-image"></div>
 			</div>
 			</div>
 		</div>
@@ -61,9 +61,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				<div class="underscore">__ __ __ __</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">""</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">""</div>
+				<div class="underscore"></div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"></div>
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"></div>
 			</div>
 		</div>		
 	</div>
@@ -72,17 +72,17 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 				<p>Letters Selected</p>
-				//put used letters here
+				
 			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">""</div>
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"></div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				//alert winner or looser
-				//flash image
+				<div id="winner" scr "..Assets/Stylesheets/Images/WinBalloons.jpg">Winner!</div>
+				<div id="loser" img src"..Assets/Stylesheets/Images/LoserImage_StickFam.jpg">Your stick figure family has vacancy</div>
 			</div>
 		</div>
 	</div>
@@ -92,16 +92,62 @@
 		<div class="wrongGuess"></div>
 
 
-	<script type="text/javascript" src="Assets/Stylesheets/hanging.js">
+	<script> //type="text/javascript" src="Assets/Stylesheets/hanging.js">
 
 	$(document).ready(function() {
 	
+		//create alphabet
+			var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+		//create words for guesses
+
+			var secretWord = ['bagpipes', 'dwarves', 'dog', 'love', 'dance', 'swing', 'banjo', 'scientist', 'fireworks', 'flag', 'picnic', 'happy', 'fruit', 'salt', 'scotch', 'dig', 'candy', 'cash', 'heart', 'art', 'hot', 'short', 'charter', 'orchestra', 'table'];
+
+		//choose word randomly	
+
+			var selectedWord = Math.floor(math.random() * secretWord.length);
+				console.log(choosenWord);
+
+		//create underscores based on word length
+
 		
 
+		for (i = 0; i > secretWord.length; i++) {
 
 
-}
+		};
 
+
+		//valid key stroke?
+
+
+		//lives counter
+			var counter = 9;
+
+		//user guess
+			var guess;	
+
+		//				
+
+
+		//message when loosing
+
+			document.getElementById("win1").innerHTML = "You Lose - Space now available in the Stick Figure Family";
+
+
+		//make lines the same length as the secretWord
+		function start() {
+   			 secretWord = wordList[Math.floor(Math.random() * wordList.length)];
+    			counter = 9;
+    		document.getElementById("counter").innerHTML = counter;
+    		for (i = 0; i < word.length; i++) {
+    		    letters[i] = "__";
+   		 };
+
+    		document.getElementById("answer").innerHTML = letters.join(" ");
+    		console.log(word);
+
+};
 
 
 
